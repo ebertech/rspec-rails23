@@ -8,7 +8,6 @@ module RSpec
       extend ActiveSupport::Concern
       include RailsExampleGroup
       include ActionController::TestCase::Assertions
-      include ActionController::Integration::Runner
       include RSpec::Rails::Matchers::RedirectTo
       include RSpec::Rails::Matchers::RenderTemplate
 
