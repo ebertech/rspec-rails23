@@ -66,7 +66,7 @@ class Autotest::RailsRspec2 < Autotest::Rspec2
       end
     }
     add_mapping(%r%^config/routes\.rb$%) {
-      files_matching %r%^spec/(controllers|routing|views|helpers)/.*_spec\.rb$%
+      files_matching %r%^spec/(controllers|features|routing|views|helpers)/.*_spec\.rb$%
     }
     add_mapping(%r%^config/database\.yml$%) { |_, m|
       files_matching %r%^spec/models/.*_spec\.rb$%
