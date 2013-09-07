@@ -6,6 +6,7 @@ require 'rspec/rails/example/request_example_group'
 #require 'rspec/rails/example/view_example_group'
 #require 'rspec/rails/example/mailer_example_group'
 require 'rspec/rails/example/routing_example_group'
+require 'rspec/rails/example/feature_example_group'
 
 RSpec::configure do |c|
   def c.escaped_path(*parts)
@@ -35,4 +36,7 @@ RSpec::configure do |c|
   #c.include RSpec::Rails::ViewExampleGroup, :type => :view, :example_group => {
     #:file_path => c.escaped_path(%w[spec views])
   #}
+  c.include RSpec::Rails::FeatureExampleGroup, :type => :feature, :example_group => {
+    :file_path => c.escaped_path(%w[spec features])
+  }
 end
