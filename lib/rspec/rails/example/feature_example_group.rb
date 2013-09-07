@@ -5,12 +5,8 @@ require 'action_controller/integration'
 module RSpec
   module Rails
     module FeatureExampleGroup
-      extend ActiveSupport::Concern
       include RailsExampleGroup
       include ActionController::TestCase::Assertions
-      include ActionController::Integration::Runner
-      include RSpec::Rails::Matchers::RedirectTo
-      include RSpec::Rails::Matchers::RenderTemplate
 
       included do
         metadata[:type] = :request

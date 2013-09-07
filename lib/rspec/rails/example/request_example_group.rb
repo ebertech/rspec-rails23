@@ -5,7 +5,6 @@ require 'action_controller/integration'
 module RSpec
   module Rails
     module RequestExampleGroup
-      extend ActiveSupport::Concern
       include RailsExampleGroup
       include ActionController::TestCase::Assertions
       include ActionController::Integration::Runner
