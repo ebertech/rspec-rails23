@@ -10,7 +10,7 @@ module RSpec
       include ActionController::TestCase::Assertions
 
       included do
-        metadata[:type] = :request
+        metadata[:type] = :feature
       end
     end
   end
