@@ -8,6 +8,7 @@ module RSpec
       extend ActiveSupport::Concern
       include RailsExampleGroup
       include ActionController::TestCase::Assertions
+      include ActionController::Integration::Runner
 
       included do
         metadata[:type] = :feature
