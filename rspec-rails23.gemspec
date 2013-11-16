@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.description = %q{Rails 2.3 extension for Rspec 2}
 
   s.add_dependency "actionpack", '~> 2.3.14'
-  s.add_dependency "rspec", '~> 2'
+  s.add_dependency "rspec", '>= 2'
   s.add_development_dependency 'rake'
   s.add_development_dependency "mocha"
   s.add_development_dependency "sdoc"
