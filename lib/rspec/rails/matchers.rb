@@ -1,4 +1,4 @@
-require 'rspec/core/deprecation'
+#require 'rspec/core/deprecation'
 require 'rspec/matchers'
 
 module RSpec::Rails
