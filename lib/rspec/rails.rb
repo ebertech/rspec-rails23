@@ -4,4 +4,4 @@ require 'rspec/core'
 require 'rspec/rails/view_rendering'
 require 'rspec/rails/matchers'
 require 'rspec/rails/example'
-
+require "rspec/vendor/capybara"
